@@ -8,4 +8,4 @@ Open [`site/index.html`](site/index.html) in a browser. The page uses the local 
 
 ## Publish with GitHub Pages
 
-In the repository settings, enable GitHub Pages and select the `main` branch with the `/ (root)` folder, or publish the `site` folder using your preferred deployment workflow.
+The `main` branch includes a GitHub Actions workflow that publishes the `site/` folder. In the repository settings, open **Pages** and set **Build and deployment → Source** to **GitHub Actions**. After that, pushes to `main` deploy the site automatically.
