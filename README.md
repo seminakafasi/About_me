@@ -2,6 +2,10 @@
 
 A static personal website and portfolio.
 
+## Live website
+
+[Open Asimina Kafasi’s website](https://seminakafasi.github.io/About_me/)
+
 ## View locally
 
 Open [`site/index.html`](site/index.html) in a browser. The page uses the local images and icons in [`site/assets/`](site/assets/).
