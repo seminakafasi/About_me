@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asimina Kafasi - Subsystem Engineer</title>
+<meta name="description" content="">
+<style>
+:root{--bg:#f2f5f8;--ink:#18222e;--muted:#5a6776;--line:#d3dbe4;--accent:#2a5d8f;--chip:#e2e9f1}
+@media (prefers-color-scheme:dark){:root{--bg:#10161d;--ink:#e6ebf1;--muted:#93a1b2;--line:#273341;--accent:#7fb1e3;--chip:#1b2531}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:root{--bg:#0a0f1a;--ink:#ffffff;--muted:#dfeaf7;--line:rgba(255,255,255,.35);--accent:#bfe3ff;--chip:rgba(255,255,255,.12)}
+@media (prefers-color-scheme:dark){:root{--bg:#0a0f1a;--ink:#ffffff;--muted:#dfeaf7;--line:rgba(255,255,255,.35);--accent:#bfe3ff;--chip:rgba(255,255,255,.12)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:linear-gradient(rgba(4,8,15,.52),rgba(4,8,15,.72)),url("assets/earth-bg.jpg") center/cover no-repeat fixed;color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{position:relative;z-index:1;max-width:62rem;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:15rem 1fr;gap:4rem}
+aside{position:relative;align-self:stretch;padding:4rem 0}
+.profile-row{display:flex;align-items:center;gap:85px;flex-wrap:nowrap;margin-bottom:.5rem}
+.profile-pic{width:220px;height:220px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.7);box-shadow:0 0 0 3px rgba(255,255,255,.15);display:block;background:#d9e8f7}
+aside h1{font:700 2rem/1.15 Georgia,"Times New Roman",serif;margin:0;color:var(--ink);display:flex;align-items:center;min-height:220px}
+aside p{margin:.2rem 0;color:var(--muted)}
+.profile-detail{margin:.2rem 0;color:#fff;font:inherit;text-align:left}
+.profile-label{color:rgba(223,234,247,.68)}
+.nationality-flag{width:24px;height:16px;object-fit:contain;vertical-align:-3px;margin-left:.15rem}
+nav{position:sticky;top:2rem;margin-top:70px;display:flex;flex-direction:column;gap:.35rem}
+nav a{text-decoration:none;color:rgba(255,255,255,.8);padding-left:.8rem;border-left:2px solid var(--line);transition:color .2s ease,border-left-color .2s ease}
+nav a:hover{border-left-color:var(--accent);color:var(--ink)}
+nav a.active{color:#FFB84D;border-left-color:#FFB84D}
+main section h2{color:var(--ink);transition:color .2s ease}
+main section h2.active-heading{color:#FFB84D}
+.btn{display:inline-block;margin-top:1.5rem;padding:.5rem 1rem;border:1px solid var(--accent);border-radius:4px;text-decoration:none;font-weight:600;color:var(--ink)}
+.btn:hover{background:var(--accent);color:var(--bg)}
+.cv-download{border-color:#F6C453;color:#FFF8E7}
+.cv-download:hover{background:rgba(246,196,83,.14);color:#FFF8E7}
+main{padding:4rem 0}
+section{margin-bottom:9rem}
+.top-spacer{height:54vh;min-height:21rem}
+.satellite-orbit{position:fixed;z-index:0;left:var(--satellite-x,88vw);top:var(--satellite-y,16vh);width:56px;opacity:0;filter:drop-shadow(0 0 5px rgba(174,210,232,.15));pointer-events:none;animation:satellite-orbit 18s ease-in-out infinite;transition:left .8s ease-out,top .8s ease-out,opacity .5s ease;will-change:left,top,transform}
+.satellite-orbit img{display:block;width:100%;height:auto;animation:satellite-float 13s ease-in-out infinite;transform-origin:50% 50%}
+@keyframes satellite-orbit{0%,100%{transform:translate3d(0,0,0)}25%{transform:translate3d(-16px,-13px,0)}50%{transform:translate3d(-34px,0,0)}75%{transform:translate3d(-16px,13px,0)}}
+@keyframes satellite-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-2px) rotate(2deg)}}
+h2{font:700 1.5rem Georgia,"Times New Roman",serif;margin:0 0 .75rem;color:var(--ink);padding-bottom:.55rem;border-bottom:1px solid rgba(255,255,255,.22);display:block;position:relative}
+main section h2.active-heading{color:#FFB84D;border-bottom-color:transparent}
+main section h2::after{content:"";position:absolute;left:0;bottom:-1px;width:100%;height:1px;background:transparent;pointer-events:none}
+main section h2.active-heading::after{background:linear-gradient(90deg,rgba(246,196,83,.68) 0%,#F6C453 18%,rgba(246,196,83,.78) 100%)}
+main section h2.active-heading::before{content:"";position:absolute;left:90px;bottom:-5px;width:78px;height:11px;transform:translateX(-50%);background:linear-gradient(90deg,transparent 0%,rgba(255,248,231,.58) 22%,#FFF8E7 50%,rgba(255,248,231,.58) 78%,transparent 100%) center/78px 3px no-repeat,linear-gradient(180deg,transparent,rgba(255,248,231,.28),transparent) center/1px 5px no-repeat;filter:blur(1.7px);box-shadow:0 0 15px rgba(255,248,231,.52),0 0 27px rgba(246,196,83,.36);pointer-events:none}
+#about{margin-top:60px}
+#about p{text-align:justify}
+.lead{font-size:1.25rem;max-width:36rem;color:var(--ink)}
+#education{position:relative}
+#education::before{content:"";position:absolute;z-index:0;left:4px;top:3.25rem;bottom:0;width:1px;background:linear-gradient(to bottom,rgba(246,196,83,.34),rgba(246,196,83,.12));pointer-events:none}
+#education .item{position:relative;z-index:1;margin:0 0 4rem;padding-left:1.5rem}
+#education .item:last-child{margin-bottom:0}
+#education .item::before{content:"";position:absolute;z-index:1;left:4px;top:.45rem;width:9px;height:9px;border-radius:50%;background:#F6C453;box-shadow:0 0 8px rgba(246,196,83,.48)}
+#education .item h3{font-size:1.15rem}
+.education-university{margin-top:.15rem;color:var(--ink)}
+.education-location{color:var(--muted);font-size:.9rem}
+.education-specialization{margin-top:.2rem;color:var(--muted);font-size:.92rem}
+.item{margin-bottom:1.6rem}
+#experience .item{margin-bottom:0;padding-bottom:2rem}
+#experience .item:not(:last-child){position:relative;margin-bottom:2rem}
+#experience .item:not(:last-child)::after{content:"";position:absolute;left:0;bottom:0;width:72%;border-bottom:1px solid rgba(255,255,255,.10)}
+.item h3{margin:0;font-size:1.05rem;color:var(--ink)}
+.experience-org{font-style:italic;color:var(--muted)}
+.item .meta{color:var(--muted);font-size:.92rem}
+.item ul{margin:.5rem 0 0;padding-left:1.2rem;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem;padding:0;list-style:none}
+.chips li{background:var(--chip);border-radius:3px;padding:.1rem .55rem;font-size:.85rem;color:var(--ink)}
+dl{margin:0}dt{font-weight:600;margin-top:.8rem;color:var(--ink)}dd{margin:.2rem 0 0;color:var(--ink)}
+#skills dd{margin-bottom:2.25rem}
+#skills dd:last-child{margin-bottom:0}
+.contact-icon{width:1.15rem;height:1.15rem;vertical-align:-.25rem;margin-right:.35rem}
+footer{color:var(--muted);font-size:.85rem;padding-bottom:3rem}
+@media (max-width:760px){.wrap{display:block}aside{position:static;padding:2.5rem 0 0}nav{flex-direction:row;flex-wrap:wrap;gap:1rem}nav a{border:0;padding:0}main{padding-top:2rem}.profile-row{align-items:flex-start}.satellite-orbit{width:44px}}
+@media (prefers-reduced-motion:reduce){.satellite-orbit,.satellite-orbit img{animation:none;transform:none;will-change:auto}.satellite-orbit{transition:none}}
+@media print{aside nav,.btn{display:none}.wrap{display:block}aside{position:static}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <div class="profile-row">
+      <img class="profile-pic" src="assets/photo.jpg" alt="Asimina Kafasi profile photo">
+      <h1>Asimina Kafasi</h1>
+    </div>
+    <p class="profile-detail">Subsystem Engineer</p>
+    <p class="profile-detail">Munich, Germany</p>
+    <p class="profile-detail"><span class="profile-label">Nationality:</span> Greek <img class="nationality-flag" src="assets/greek-flag.svg" alt="Greek flag"></p>
+    <p class="profile-detail"><span class="profile-label">Languages:</span> Greek · English · French (B1) · German (A1)</p>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+            <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+  <main>
+    <div class="top-spacer" aria-hidden="true"></div>
+    <section id="about"><h2>About</h2><p class="lead"></p><p>I am a physicist and space systems engineer, working as a Subsystem Engineer at the German Aerospace Center (DLR). I hold an MSc in Space Science from the International Space University, specializing in Space Engineering &amp; Applications, and a BSc in Physics, specializing in electronics, from the University of Patras.</p><p>My expertise covers CubeSats, space robotics and electrical power systems, from power budgeting and PCB design to integration, verification and testing. For my Master&#x27;s thesis, I designed a custom power management and distribution PCB for a 1U CubeSat, combining solar MPPT input, battery protection and orbital energy simulation. I enjoy working in international, multidisciplinary teams.</p></section>
+    <section id="experience"><h2>Experience</h2><div class="item"><h3>Subsystem Engineer</h3><div class="experience-org">German Aerospace Center (DLR)</div><div class="meta">2026 – Present</div><ul><li>Support spacecraft subsystem engineering, operations, technical procedures, and verification activities within a multidisciplinary team.</li></ul></div><div class="item"><h3>Master’s Thesis — CubeSat Electrical Power System</h3><div class="experience-org">International Space University</div><div class="meta">2025–2026</div><ul><li>Designed and experimentally validated a custom power management and distribution PCB with solar-energy integration for a CubeSat Electrical Power Subsystem.</li></ul></div><div class="item"><h3>Electrical Power Subsystem (EPS) Lead — Rover Project</h3><div class="experience-org">International Space University</div><div class="meta">Feb 2025 – Mar 2025</div><ul><li>Led EPS design and component selection, including power budgeting, subsystem interfaces, risk analysis, and verification planning.</li></ul></div><div class="item"><h3>Concurrent Engineering Workshop</h3><div class="experience-org">International Space University</div><div class="meta">Feb 2025</div><ul><li>Participated in an ESA-led concurrent engineering workshop focused on mission design, systems engineering, and multidisciplinary collaboration.</li></ul></div><div class="item"><h3>CubeSat EPS Integration &amp; Verification</h3><div class="experience-org">International Space University</div><div class="meta">Jan 2025</div><ul><li>Integrated and verified the CubeSat EPS, including battery, solar-panel, and voltage-regulation configurations, and tested performance under simulated operational loads.</li></ul></div><div class="item"><h3>TP Mars</h3><div class="experience-org">International Space University</div><div class="meta">Nov 2024 – Jun 2025</div><ul><li>Analyzed solar photon behavior on Mars to assess its potential as an energy resource.</li><li>Supported engineering activities related to Martian iron-resource analysis.</li></ul></div><div class="item"><h3>Bachelor’s Thesis — Robotic Arm Development</h3><div class="experience-org">University of Patras</div><div class="meta">Oct 2023 – Jul 2024</div><ul><li>Designed and implemented a four-degree-of-freedom robotic arm.</li><li>Conducted theoretical research and literature review supporting the robotic-arm development.</li></ul></div><div class="item"><h3>EUROAVIA Sloshing Rocket Team</h3><div class="experience-org">University of Patras</div><div class="meta">Oct 2022 – Jul 2023</div><ul><li>Conducted theoretical analysis of liquid sloshing behavior for an experimental rocket concept.</li><li>Contributed to the rocket design study as part of the Airbus Sloshing Rocket Workshop.</li></ul></div></section>
+    <section id="education"><h2>Education</h2><div class="item"><h3>MSc Space Science</h3><div class="education-university">International Space University</div><div class="education-location">Strasbourg, France</div><div class="meta">Sep 2024 – Jun 2025</div><div class="education-specialization">Specialization: Space Engineering &amp; Applications</div></div><div class="item"><h3>Bachelor of Science in Physics</h3><div class="education-university">University of Patras</div><div class="education-location">Patras, Greece</div><div class="meta">Sep 2020 – Jul 2024</div><div class="education-specialization">Specialization: Electronics</div></div></section>
+    <section id="skills"><h2>Skills</h2><dl><dt>Programming</dt><dd><ul class="chips"><li>C++</li><li>Fortran</li><li>C</li><li>CCS Compiler</li></ul></dd><dt>Electronics &amp; Power Systems</dt><dd><ul class="chips"><li>KiCad</li><li>Schematic Design</li><li>PCB Layout</li><li>Electrical Power Systems (EPS)</li></ul></dd><dt>Space Systems Engineering</dt><dd><ul class="chips"><li>MBSE</li><li>Integration, Verification &amp; Testing</li></ul></dd><dt>Simulation, Modeling &amp; CAD</dt><dd><ul class="chips"><li>STK</li><li>Cameo Systems Modeler</li><li>AutoCAD</li><li>Fusion 360</li></ul></dd><dt>Data &amp; Engineering Tools</dt><dd><ul class="chips"><li>TOPCAT</li><li>Microsoft Office</li></ul></dd></dl></section>
+    <section id="cv"><h2>CV</h2><p>View or download my full curriculum vitae for a detailed overview of my experience, education, and technical background.</p><a class="btn cv-download" href="cv.pdf" download>Download CV</a></section>
+    <section id="contact"><h2>Contact</h2><dl><dt>📧 Email</dt><dd><a href="mailto:seminakafasi@gmail.com">seminakafasi@gmail.com</a></dd><dt><img class="contact-icon" src="assets/linkedin.svg" alt="">LinkedIn</dt><dd><a href="https://www.linkedin.com/in/asimina-kafasi-25a087256">https://www.linkedin.com/in/asimina-kafasi-25a087256</a></dd></dl></section>
+    <footer>&copy; Asimina Kafasi</footer>
+  </main>
+</div>
+<div class="satellite-orbit" aria-hidden="true"><img src="assets/cubesat.svg" alt=""></div>
+<script>
+const sections = [...document.querySelectorAll('main section[id]')];
+const navLinks = [...document.querySelectorAll('nav a')];
+const satellite = document.querySelector('.satellite-orbit');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let satelliteFrame = 0;
+let reducedMotionPosition = null;
+
+function placeSatellite() {
+    if (!satellite) return;
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const satelliteWidth = width <= 760 ? 44 : 56;
+    const satelliteHeight = satelliteWidth * 56 / 88;
+    const maxScroll = Math.max(1, document.documentElement.scrollHeight - height);
+    const progress = reducedMotion.matches ? 0 : window.scrollY / maxScroll;
+    const phase = progress * Math.PI * 2;
+    const desiredX = width * (0.82 + 0.12 * (0.5 + 0.5 * Math.sin(phase)));
+    const desiredY = height * (0.16 + 0.68 * (0.5 - 0.5 * Math.cos(phase)));
+    const columns = [0.80, 0.86, 0.92, 0.96];
+    const rows = [0.12, 0.28, 0.44, 0.60, 0.76, 0.88];
+    let candidates = [];
+
+    if (reducedMotion.matches && reducedMotionPosition) {
+        candidates = [reducedMotionPosition];
+    } else {
+        candidates.push([desiredX, desiredY]);
+        const rowOffset = Math.floor(progress * rows.length) % rows.length;
+        const colOffset = Math.floor(progress * columns.length) % columns.length;
+        for (let r = 0; r < rows.length; r++) {
+            for (let c = 0; c < columns.length; c++) {
+                candidates.push([
+                    width * columns[(c + colOffset) % columns.length],
+                    height * rows[(r + rowOffset) % rows.length]
+                ]);
+            }
+        }
+        candidates.sort(function(a, b) {
+            return Math.hypot(a[0] - desiredX, a[1] - desiredY) - Math.hypot(b[0] - desiredX, b[1] - desiredY);
+        });
+    }
+
+    const obstacles = [...document.querySelectorAll(
+        '.wrap h1, .wrap .profile-pic, .wrap aside p, .wrap nav a, .wrap main h2, .wrap main p, .wrap main h3, .wrap main li, .wrap main dt, .wrap main dd, .wrap main dd a, .wrap main .chips li, .wrap main .btn, .wrap main footer'
+    )].map(function(element) {
+        return element.getBoundingClientRect();
+    }).filter(function(rect) {
+        return rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < height && rect.right > 0 && rect.left < width;
+    });
+
+    let selected = null;
+    let selectedClearance = 0;
+    for (const candidate of candidates) {
+        const x = Math.max(40, Math.min(width - satelliteWidth - 8, candidate[0]));
+        const y = Math.max(20, Math.min(height - satelliteHeight - 20, candidate[1]));
+        const swept = {left:x - 38, right:x + satelliteWidth + 8, top:y - 18, bottom:y + satelliteHeight + 18};
+        let clear = true;
+        let clearance = Infinity;
+
+        for (const rect of obstacles) {
+            const obstacle = {left:rect.left - 8, right:rect.right + 8, top:rect.top - 8, bottom:rect.bottom + 8};
+            const overlaps = swept.left < obstacle.right && swept.right > obstacle.left && swept.top < obstacle.bottom && swept.bottom > obstacle.top;
+            if (overlaps) {
+                clear = false;
+                break;
+            }
+            const gapX = Math.max(obstacle.left - swept.right, swept.left - obstacle.right, 0);
+            const gapY = Math.max(obstacle.top - swept.bottom, swept.top - obstacle.bottom, 0);
+            clearance = Math.min(clearance, Math.hypot(gapX, gapY));
+        }
+
+        if (clear) {
+            selected = [x, y];
+            selectedClearance = clearance;
+            break;
+        }
+    }
+
+    if (reducedMotion.matches && !reducedMotionPosition) reducedMotionPosition = selected || [Math.max(40, Math.min(width - satelliteWidth - 8, desiredX)), Math.max(20, Math.min(height - satelliteHeight - 20, desiredY))];
+    if (selected) {
+        satellite.style.transition = reducedMotion.matches ? 'none' : 'left .8s ease-out,top .8s ease-out,opacity .5s ease';
+        satellite.style.left = selected[0] + 'px';
+        satellite.style.top = selected[1] + 'px';
+        satellite.style.opacity = selectedClearance < 28 ? '0.12' : '0.34';
+    } else {
+        satellite.style.transition = 'none';
+        satellite.style.opacity = '0';
+    }
+}
+
+function scheduleSatellitePlacement() {
+    if (satelliteFrame) return;
+    satelliteFrame = window.requestAnimationFrame(function() {
+        satelliteFrame = 0;
+        placeSatellite();
+    });
+}
+
+function setActiveLink() {
+  const offset = window.innerHeight * 0.35;
+  let currentId = navLinks[0].getAttribute('href').slice(1);
+
+  for (let i = 0; i < sections.length; i++) {
+    const section = sections[i];
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= offset && rect.bottom >= offset) {
+      currentId = section.id;
+      break;
+    }
+  }
+
+  navLinks.forEach(function(link) {
+    const isActive = link.getAttribute('href') === '#' + currentId;
+    link.classList.toggle('active', isActive);
+  });
+
+  sections.forEach(function(section) {
+    const heading = section.querySelector('h2');
+    if (!heading) return;
+    const isActiveSection = section.id === currentId;
+    heading.classList.toggle('active-heading', isActiveSection);
+  });
+}
+
+window.addEventListener('scroll', function() { setActiveLink(); scheduleSatellitePlacement(); }, {passive:true});
+window.addEventListener('load', function() { setActiveLink(); scheduleSatellitePlacement(); });
+window.addEventListener('resize', function() { reducedMotionPosition = null; setActiveLink(); scheduleSatellitePlacement(); });
+reducedMotion.addEventListener('change', function() { reducedMotionPosition = null; scheduleSatellitePlacement(); });
+setActiveLink();
+placeSatellite();
+</script>
+</body>
+</html>

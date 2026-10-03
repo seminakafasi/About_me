@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 32" role="img" aria-label="Greek flag">
+  <defs>
+    <clipPath id="flag-shape">
+      <path d="M1 4C12 0 22 1 31 3s11 2 16-1v25c-10 5-17 4-26 2S8 27 1 31z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#flag-shape)">
+    <rect width="48" height="32" fill="#0D5EAF"/>
+    <path d="M0 3.6C14 1 22 3 31 4.5s12 2 18-1v3.6c-7 3-12 2-19 .8S13 4.8 0 7.2zM0 10.7c13-2.6 21-.7 30 1s12 2 19-1v3.6c-8 3-12 2-20 .7S13 11.8 0 14.3zM0 17.8c13-2.5 21-.6 30 1.1s12 2 19-1v3.6c-8 3-12 2-20 .7S13 18.9 0 21.4zM0 24.9c13-2.5 21-.6 30 1.1s12 2 19-1v3.6c-8 3-12 2-20 .7S13 26 0 28.5z" fill="#fff"/>
+    <path d="M0 0h18v18H0z" fill="#0D5EAF"/>
+    <path d="M7 0h4v18H7zM0 7h18v4H0z" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 56" role="img" aria-label="Small CubeSat">
+  <g stroke="#9DB6C7" stroke-width="1" stroke-linejoin="round">
+    <path fill="#34566B" d="M3 16h22v24H3zM63 16h22v24H63z"/>
+    <path fill="none" d="M10.3 16v24M17.7 16v24M3 24h22M3 32h22M70.3 16v24M77.7 16v24M63 24h22M63 32h22" opacity=".62"/>
+    <path fill="#829BAA" d="m29 19 9-6h14l9 6v20l-9 6H38l-9-6z"/>
+    <path fill="#A8BBC6" d="m29 19 9-6v20l-9 6z"/>
+    <path fill="#647F90" d="m38 13 5 4h9l-5-4zM52 17l9 2-9-6h-5zM38 33l-9 6 9 6z"/>
+    <path fill="none" d="M43 17v16m-9-8h19m-13-8 8 16m0-16-8 16" opacity=".75"/>
+    <path fill="none" stroke-width="1.4" d="M44 13V5m0 0-4-3m4 3 4-3M44 44v7"/>
+    <circle cx="44" cy="3" r="1.4" fill="#D7E3E9" stroke="none"/>
+    <path fill="#D7E3E9" stroke="none" d="M41 50h6l-3 4z"/>
+  </g>
+</svg>
